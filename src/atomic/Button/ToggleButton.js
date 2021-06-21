@@ -1,6 +1,6 @@
 import {Row} from "react-bootstrap";
 import React, {useState} from "react";
-import './toggleButton.css';
+import './ToggleButton.css';
 const ToggleButton =(props) => {
 
 	const [postActive,setPostActive] = useState(props.defaultOn);

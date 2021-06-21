@@ -60,7 +60,7 @@ class Chips extends Component{
         })
     }
     getSelected = ()=>{
-        const activeDiv = document.querySelector('.chips.active');
+        const activeDiv = document.querySelector('.Chips.active');
         if (activeDiv===null){
             return null;
         }
@@ -80,11 +80,11 @@ class Chips extends Component{
         return null;
     }
     up = ()=>{
-        const activeDiv = document.querySelector('.chips.active');
+        const activeDiv = document.querySelector('.Chips.active');
         if (!activeDiv)
             return;
         const activePosition = this.getPosition(activeDiv);
-        let elements = document.querySelectorAll('.chips:not(.active)');
+        let elements = document.querySelectorAll('.Chips:not(.active)');
         let selectedDiv = null;
         for (const e of elements){
             const position = this.getPosition(e);
@@ -107,8 +107,8 @@ class Chips extends Component{
         }
     }
     down = ()=>{
-        const activePosition = this.getPosition(document.querySelector('.chips.active'));
-        let elements = document.querySelectorAll('.chips:not(.active)');
+        const activePosition = this.getPosition(document.querySelector('.Chips.active'));
+        let elements = document.querySelectorAll('.Chips:not(.active)');
         let selectedDiv = null;
         for (const e of elements){
             const position = this.getPosition(e);
@@ -158,10 +158,10 @@ class Chips extends Component{
     }
     render() {
         return (
-            <div className={"chips-list"}>
+            <div className={"Chips-list"}>
                 {
                     this.state.data.map((a) =>
-                        <div className={"chips " + (a.id === this.state.active ? "active" : "")}
+                        <div className={"Chips " + (a.id === this.state.active ? "active" : "")}
                              onClick={() => this.handleClick(a)}
                              key={a.id} data-chip-id={a.id}>
                             {a.value}

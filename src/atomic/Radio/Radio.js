@@ -3,7 +3,7 @@ import {Col} from "react-bootstrap";
 import './Radio.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faExclamationCircle} from "@fortawesome/free-solid-svg-icons";
-import Button from "../button/Button";
+import Button from "../Button/Button";
 
 class Radio extends Component{
     constructor(props) {

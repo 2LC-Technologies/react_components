@@ -4,7 +4,7 @@ import React, {Component} from "react";
 import Flatpickr from "react-flatpickr";
 import '../../../../node_modules/flatpickr/dist/flatpickr.min.css';
 import dateFormat from "dateformat"
-import Button from "../button/Button";
+import Button from "../Button/Button";
 
 class InputDate extends Component{
     constructor(props) {

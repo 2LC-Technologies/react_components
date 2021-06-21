@@ -1,7 +1,7 @@
 import React from 'react';
 import Tags from "@yaireo/tagify/dist/react.tagify"
 import "@yaireo/tagify/dist/tagify.css"
-import "./tagify.css"
+import "./Tagify.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faExclamationCircle} from "@fortawesome/free-solid-svg-icons";
 import {Tooltip} from "antd";

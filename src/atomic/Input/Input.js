@@ -1,6 +1,6 @@
 import './Input.scss';
 import React from "react";
-import Button from "../button/Button";
+import Button from "../Button/Button";
 import {faEye} from "@fortawesome/free-solid-svg-icons/faEye";
 import {faEyeSlash} from "@fortawesome/free-solid-svg-icons/faEyeSlash";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,7 +15,6 @@ class Input extends React.Component{
 			error: props.error,
 			value: props.value,
 			showErrorResolver: props.showErrorResolver,
-			type: props.type,
 			readonly: false,
 			disableResolveButton: false,
 			placeholder: props.placeholder?props.placeholder:props.hint
@@ -42,13 +41,12 @@ class Input extends React.Component{
 	}
 	togglePasswordView = ()=>{
 		this.setState({
-			type: this.state.type==='password'?'text':'password'
+			type: this.props.type==='password'?'text':'password'
 		})
 	}
-
 	render() {
 		return(
-			<div className={"input-root "+this.props.inputClassName + (this.props.static?" input-static":"")}>
+			<div className={"Input-root "+this.props.inputClassName + (this.props.static?" Input-static":"")}>
 				{!this.props.noTitle && 
 				<h4 className="input-title">
 					{this.props.title?this.props.title:this.props.hint}&nbsp;
@@ -59,7 +57,7 @@ class Input extends React.Component{
 					<div className="form-group-prepend">
 						<div className="input-group-text"><span className="material-icons-round input-icon">{this.props.icon}</span></div>
 					</div>
-					<input type={this.state.type}
+					<input type={this.props.type}
 						   disabled={this.props.static || this.props.disabled}
 						   style={this.props.style}
 						   ref={(inputRef) => this.inputRef = inputRef}
@@ -69,12 +67,12 @@ class Input extends React.Component{
 						   placeholder={this.props.placeholder?this.props.placeholder:this.props.hint}
 						   onChange={this.props.onChange}
 						   min={this.props.min}
-						   max={this.props}
+						   max={this.props.max}
 					/>
 
 					{
 						this.props.type && this.props.type==='password' &&
-						<FontAwesomeIcon onClick={this.togglePasswordView} className={"password-eye"} icon={this.state.type==='password'?faEye:faEyeSlash}/>
+						<FontAwesomeIcon onClick={this.togglePasswordView} className={"password-eye"} icon={this.props.type==='password'?faEye:faEyeSlash}/>
 					}
 				</div>
 				<div className={"error-row"}>
@@ -90,4 +88,17 @@ class Input extends React.Component{
 		)
 	}
 }
+Input.propTypes = {
+	title: String,
+	noTitle: Boolean,
+	value: String,
+	error: String,
+	showErrorResolver: Boolean,
+	type: String,
+	hint: String,
+	tooltip: String,
+	static: Boolean,
+	required: Boolean,
+}
+
 export default Input;

@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import Select from "react-select";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faExclamationCircle} from "@fortawesome/free-solid-svg-icons";
-import Button from "../button/Button";
+import Button from "../Button/Button";
 import Input from "./Input";
 
 class DropDownSelect extends Component{

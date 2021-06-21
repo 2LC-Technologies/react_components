@@ -3,7 +3,7 @@ import {Editor} from "@tinymce/tinymce-react";
 import { Spin } from "antd";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faExclamationCircle} from "@fortawesome/free-solid-svg-icons";
-import Button from "../atomic/button/Button";
+import Button from "../atomic/Button/Button";
 
 class CustomEditor extends Component{
 	constructor(props) {

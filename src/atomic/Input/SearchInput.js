@@ -59,7 +59,7 @@ class SearchInput extends Component{
 					ref={this.inputRef}
 					onChange={this.handleOnChange}
 					{...newProps}
-					className={"input-search "+newProps.className}
+					className={"Input-search "+newProps.className}
 				/>
 			</div>
 		);

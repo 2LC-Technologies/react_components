@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col, Row} from "react-bootstrap";
-import Button from "../atomic/button/Button";
+import Button from "../atomic/Button/Button";
 import './MultipleAddableComponent.scss';
 import BasicComponent from "./BasicComponent";
 

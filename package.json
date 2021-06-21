@@ -1,5 +1,5 @@
 {
-  "name": "react-basic-components",
+  "name": "react-components-group",
   "version": "1.0.0",
   "description": "React components for basic project",
   "main": "index.js",
@@ -10,7 +10,8 @@
     "react",
     "component",
     "basic-component",
-    "class-component"
+    "class-component",
+    "group"
   ],
   "author": "Harsh Kanjariya",
   "license": "ISC"

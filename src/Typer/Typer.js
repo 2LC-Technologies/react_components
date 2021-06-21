@@ -133,13 +133,16 @@ class Typer extends Component {
 		let preText = this.state.text.substr(0,this.state.currentPosition);
 		let postText = this.state.text.substr(this.state.currentPosition);
         return (
-			<span className={"mt-3 typer-span " + this.props.className}>
+			<span className={"mt-3 Typer-span " + this.props.className}>
 				<span>{preText}</span>
 				<span style={this.props.style} className={"caret"} ref={r => this.caret = r}/>
 				<span>{postText}</span>
             </span>
         );
     }
+}
+Typer.propTypes={
+	events: Array
 }
 
 export default Typer;
