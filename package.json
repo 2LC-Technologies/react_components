@@ -1,0 +1,17 @@
+{
+  "name": "react-basic-components",
+  "version": "1.0.0",
+  "description": "React components for basic project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "basic-component",
+    "class-component"
+  ],
+  "author": "Harsh Kanjariya",
+  "license": "ISC"
+}
