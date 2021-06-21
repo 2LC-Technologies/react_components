@@ -1,0 +1,144 @@
+.model-show{
+    position: fixed;
+    display: none;
+    z-index: 99999;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .model-container{
+        width: 90%;
+        padding:55px 16px 40px 16px;
+        background-color: white;
+        border-radius: var(--border-radius);
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        flex-direction: column;
+        .close-icon{
+            position: absolute;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-right: 15px;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+        .title{
+            font-family: 'Montserrat-Bold',sans-serif;
+            text-align: center;
+            color:var(--text-color);
+            font-size: 19px;
+        }
+        .description{
+            text-align: center;
+        }
+        button{
+            margin-top: 17px;
+        }
+        @media (max-width:700px){
+            .title{
+                font-size: 16px;
+            }
+        }
+        .resend{
+            cursor: pointer;
+        }
+        .otp-inputs{
+            -webkit-transition: none;
+            height: 45px;
+            width: 40px !important;
+            margin-right: 15px;
+            text-align: center;
+            background-color: #fff;
+            border:1px solid #c5c5c6;
+            padding: 0;
+            border-radius: 3px;
+            color: #3F4254;
+            transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+            font-size: 16px;
+            outline: 0;
+        }
+        .otp-inputs:active,
+        .otp-inputs.active,
+        .otp-inputs:focus,
+        .otp-inputs.focus {
+            background-color: #fff;
+            border:2px solid #475bd82e;
+            color: #3a3d4e;
+            box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+            transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+    }
+    
+}
+.model-show.success{
+    .model-container{
+        padding:0;
+        border-radius: 4px;
+        .close-icon{
+            position: absolute;
+            z-index: 10;
+        }
+        .model-container-row{
+            position: relative;
+            padding:25px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 35px;
+        .sucess-icon{
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+                text-align: center;
+                background-color: var(--success);
+                border-radius: 50%;
+                font-size: 35px;
+                color:#fff;
+            }
+            .title{
+                margin-top:15px;
+                font-family: 'Nunito-ExtraBold',sans-serif;
+                margin-bottom: 0;
+                font-size: 22px;
+            }
+            .desciption{
+                text-align: center;
+                font-size: 18px;
+                margin-top: 0;
+                font-family: 'Nunito-SemiBold',sans-serif;
+            }
+        }
+        .model-container-row:after{
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            position: absolute;
+            bottom:0;
+            transform:translateY(15px) rotate(45deg);
+        }  
+        .model-container-row1{
+            width: 100%;
+            padding:15px;
+            background-color: #d1d1d1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                float: none;
+                border: 0;
+                margin-top: 20px;
+                color:#fff !important;
+            }
+        }
+    }
+}

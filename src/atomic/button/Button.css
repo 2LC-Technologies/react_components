@@ -1,0 +1,147 @@
+
+/* button */
+.btn-alas{
+    padding: 10px 15px;
+    background-color: var(--theme-primary);
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid var(--theme-primary);
+    text-transform: capitalize;
+    border-radius: var(--border-radius);
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+
+}
+.btn-alas-fit-content{
+    width: fit-content !important;
+}
+.btn-alas.disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
+@media (max-width:991px) {
+    .btn-alas {
+        width: 100%;
+    }
+}
+
+.btn-alas:hover {
+    color: #fff;
+}
+
+.btn-alas-light{
+    border: 2px solid var(--theme-primary);
+    color: var(--theme-primary);
+    background-color: transparent;
+}
+
+.btn-alas-light:hover {
+    border: 2px solid var(--theme-primary);
+    background-color: var(--theme-primary);
+    color: #fff;
+}
+
+.btn-alas-preview,.btn-previous{
+    border:2px solid lightgray;
+    color: #333;
+    background-color:transparent;
+}
+.btn-alas-preview:hover,.btn-previous:hover{
+    color: #333;
+}
+.btn-previous-small{
+    border:1px solid lightgray;
+    padding:6px 25px;
+    width: auto !important;
+    font-size: 13px;
+    color: #333;
+    background-color:transparent;
+}
+.btn-previous-small:hover{
+    color: #333;
+}
+@media(max-width:390px){
+    .btn-previous-small{
+        padding:6px 8px;
+        font-size: 11px;
+    }
+}
+.btn-preview-1{
+    border:1px solid lightgray;
+    color: var(--theme-primary);
+    background-color:transparent;
+}
+.btn-preview-1:hover{
+    color: var(--theme-primary);
+}
+.btn-add {
+    background-color: #5363c8 !important;
+    border: 2px solid #5363c8 !important;
+    display: flex;
+    align-items: center;
+}
+.btn-background-less{
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: var(--theme-primary);
+}
+.btn-background-less:hover{
+    background-color: #efeff2;
+    border: 1px solid transparent;
+    color: var(--theme-primary);
+}
+.btn-lightprimary{
+    background-color:#6071d9;
+    float: none !important;
+    border: 1px solid transparent;
+    color: #fff;
+    padding:10px 15px;
+    width: 50%;
+    font-family: 'Montserrat-Bold',sans-serif;
+}
+@-webkit-keyframes pop-on-hover {
+    50% {
+        -webkit-transform: scale(1.07);
+        transform: scale(1.07);
+    }
+}
+
+@keyframes pop-on-hover {
+    50% {
+        -webkit-transform: scale(1.07);
+        transform: scale(1.07);
+    }
+}
+
+.hvr-pop {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-pop:hover,
+.hvr-pop:focus,
+.hvr-pop:active {
+    -webkit-animation-name: pop-on-hover;
+    animation-name: pop-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+.btn-alas.loading-btn{
+    cursor: not-allowed;
+    /* border-color:var(--primary-alpha); */
+    /* background-color: var(--primary-alpha); */
+}
+/* button */

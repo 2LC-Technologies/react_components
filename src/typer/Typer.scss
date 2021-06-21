@@ -1,0 +1,25 @@
+.typer-span{
+	font-size: 22px;
+	text-align: center;
+	.caret {
+		display: inline;
+		height: 1em;
+		position: absolute;
+		transform: translate(0px,8px);
+		border-left: 2px solid black;
+	}
+	.blink {
+		animation: blink-animation 1s step-start infinite;
+		-webkit-animation: blink-animation 1s step-start infinite;
+	}
+}
+@keyframes blink-animation {
+	50% {
+		opacity: 0.0;
+	}
+}
+@-webkit-keyframes blink-animation {
+	50% {
+		opacity: 0.0;
+	}
+}

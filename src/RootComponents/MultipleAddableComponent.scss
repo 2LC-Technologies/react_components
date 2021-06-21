@@ -1,0 +1,43 @@
+.multi-add-root{
+	.multi-add-circle-root{
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 10px;
+	}
+
+	.multi-add-circles{
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		display: flex;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+		font-size: 15px;
+		border-radius: 50%;
+		margin: 0 5px;
+	}
+	.multi-add-circles:hover{
+		background-color: #efeff2;
+	}
+	.multi-add-circles.active{
+		background: var(--theme-primary);
+		color: white;
+	}
+	.addIcon{
+		background-color: #e35d6a;
+		color: #fff;
+		font-size: 12px;
+	}
+	.addIcon:hover{
+		background-color: #e35d6a;
+		-webkit-animation-name: pop-on-hover;
+		animation-name: pop-on-hover;
+		-webkit-animation-duration: 0.3s;
+		animation-duration: 0.3s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		animation-iteration-count: 1;
+	}
+}
